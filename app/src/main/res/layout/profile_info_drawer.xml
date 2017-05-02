@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        style="@style/ImageView"
+        android:layout_gravity="center"
+        android:src="@drawable/paris"
+        />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        style="@style/TextView"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_xxlarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPlace"
+        style="@style/TextView"
+        android:gravity="center"
+        android:text="@string/place"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/font_large"
+        android:drawableEnd="@drawable/edit_icon"
+        android:drawableRight="@drawable/edit_icon"
+        android:paddingStart="@dimen/padding_large"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingEnd="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal" />
+</LinearLayout>

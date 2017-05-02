@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Toolbar bottom text view -->
+    <style name="tvToolBarBottom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+    <!-- any Layout whose width height match parent -->
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="ImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+
+    <style name="TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="tvDrawer" parent="@style/TextView">
+        <item name="android:drawablePadding">@dimen/padding_normal</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">@dimen/padding_normal</item>
+    </style>
+    
+    <style name="tvRowLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ImageViewNetwork">
+        <item name="android:layout_width">@dimen/image_view_network</item>
+        <item name="android:layout_height">@dimen/image_view_network</item>
+    </style>
+
+</resources>

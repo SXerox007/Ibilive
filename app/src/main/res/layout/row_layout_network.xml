@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        style="@style/ImageViewNetwork"
+        android:id="@+id/ciUserImage"
+        android:layout_gravity="left|start"
+        android:src="@drawable/paris"
+        />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ciUserImage"
+        android:text="@string/evelyn"
+        android:layout_margin="@dimen/margin_small"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/tvLocations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ciUserImage"
+        android:layout_below="@+id/tvName"
+        android:text="@string/place"
+        android:paddingBottom="@dimen/padding_small"
+        android:drawableStart="@drawable/icon_location"
+        android:drawableLeft="@drawable/icon_location"
+        />
+    <RatingBar
+        android:id="@+id/rbRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="6"
+        android:layout_margin="@dimen/margin_small"
+        android:rating="5"
+        android:layout_alignParentRight="true"
+        />
+<Button
+    android:layout_width="@dimen/btn_w"
+    android:layout_height="@dimen/btn_h"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/rbRating"
+    android:textColor="@color/colorText"
+    android:background="@drawable/button_connnect"
+    android:text="@string/connnect"
+
+    />
+</RelativeLayout>
+
+</LinearLayout>

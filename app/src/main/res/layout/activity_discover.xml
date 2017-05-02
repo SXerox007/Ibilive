@@ -1,0 +1,62 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dlUserDrawer"
+    style="@style/Match">
+
+    <RelativeLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/content"
+            style="@style/Match"
+            android:gravity="top">
+
+            <include layout="@layout/action_tool_bar_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Match"
+            android:gravity="bottom">
+
+            <include
+                android:id="@+id/toolBottom"
+                layout="@layout/action_tool_bar_bottom" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/toolBottom"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                app:elevation="0dp"
+                app:srcCompat="@drawable/ic_add_black_24dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flHomeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start">
+
+        <include layout="@layout/drawer" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

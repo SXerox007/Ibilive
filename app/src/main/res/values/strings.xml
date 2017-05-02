@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ibilive</string>
+    <string name="discover">Discover</string>
+    <string name="map">Map</string>
+    <string name="my_post">My Post</string>
+    <string name="requests">Requests</string>
+    <string name="my_network">My Network</string>
+    <string name="where_would_you_connect">Where would you like to connect?</string>
+    <string name="name">Name</string>
+    <string name="place">Paris</string>
+    <string name="home">Home</string>
+    <string name="card_subscription">Cards/Subscription</string>
+    <string name="support">Support</string>
+    <string name="my_request">My Request</string>
+    <string name="share">Share</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="explore">Explore Paris</string>
+    <string name="buttonRequest">Send Request</string>
+    <string name="time">6d 2h left</string>
+    <string name="reviews">222 Reviews</string>
+    <string name="info">Lorem ipsum dolor sit amet, consectetur lorem ipsum
+dolor sit amet, consectetur lorem ipsum.</string>
+    <string name="evelyn">Evelyn</string>
+    <string name="connnect">Connect</string>
+    <string name="key">AIzaSyD1RFx2HLG6jLs0tBdRWSAPc-0FzP2_duI</string>
+
+    
+</resources>

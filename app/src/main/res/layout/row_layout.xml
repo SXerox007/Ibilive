@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/paris" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans_background">
+
+            <TextView
+                android:id="@+id/tvCityName"
+                style="@style/tvRowLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginStart="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                style="@style/tvRowLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall"
+                android:layout_toLeftOf="@+id/tvLocation"
+                android:src="@drawable/map" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/buttonRequest"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/font_normal" />
+
+        <Switch
+            android:id="@+id/switchSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingBottom="@dimen/padding_large"
+            android:paddingLeft="@dimen/padding_normal"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pic_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_image_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/font_small"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rbRating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="6"
+                    android:rating="5" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:drawableLeft="@drawable/time_1"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/spacing_tiny"
+                android:text="@string/time"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                android:drawableLeft="@drawable/reviews"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/spacing_tiny"
+                android:text="@string/reviews"
+                android:layout_gravity="top|end"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
