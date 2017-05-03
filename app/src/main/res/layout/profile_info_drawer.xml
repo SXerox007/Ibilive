@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/backgroundAll"
     >
     <de.hdodenhof.circleimageview.CircleImageView
         style="@style/ImageView"
@@ -16,7 +17,7 @@
         android:gravity="center"
         android:text="@string/name"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/font_xxlarge"
+        android:textSize="@dimen/font_xlarge"
         android:textStyle="bold" />
 
     <TextView
