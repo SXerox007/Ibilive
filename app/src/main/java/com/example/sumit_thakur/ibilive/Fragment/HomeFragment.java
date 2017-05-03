@@ -45,7 +45,6 @@ public class HomeFragment extends Fragment implements Constants {
                     ivInfo.setVisibility(View.VISIBLE);
                 }
             }
-
             @Override
             public void onPageScrollStateChanged(final int state) {
 
