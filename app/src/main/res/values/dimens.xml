@@ -48,6 +48,7 @@
     <dimen name="margin_medium">15dp</dimen>
     <dimen name="margin_large">20dp</dimen>
     <dimen name="margin_xlarge">25dp</dimen>
+    <dimen name="margin_x_large">33dp</dimen>
     <dimen name="margin_xxlarge">60dp</dimen>
 
     <dimen name="padding_small">5dp</dimen>
@@ -66,6 +67,7 @@
     <dimen name="drawer_tool_bar_height">90dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="image_view_network">45dp</dimen>
-    <dimen name="btn_w">100dp</dimen>
+    <dimen name="btn_w">90dp</dimen>
     <dimen name="btn_h">30dp</dimen>
+    <dimen name="round_image">66dp</dimen>
 </resources>

@@ -29,7 +29,7 @@ CA </string>
     <string name="posts">Posts</string>
     <string name="Map">Map</string>
     <string name="Network">Network</string>
-    <string name="show_on_map">Show on Map</string>
+    <string name="show_on_map">show on map</string>
 
 
 </resources>

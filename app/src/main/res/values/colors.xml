@@ -7,4 +7,5 @@
     <color name="hintColor">#9b9b9b</color>
     <color name="textColor">#404040</color>
     <color name="trans_background">#B33a4245</color>
+    <color name="backgroundAll">#f3f3f3</color>
 </resources>
