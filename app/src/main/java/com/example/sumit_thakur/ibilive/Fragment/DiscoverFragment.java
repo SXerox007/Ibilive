@@ -18,9 +18,8 @@ import com.example.sumit_thakur.ibilive.R;
 import java.util.ArrayList;
 
 /**
- * Created by SUMIT_THAKUR on 01/05/17.
+ * Common Fragment to all
  */
-
 public class DiscoverFragment extends Fragment implements Constants {
     private ArrayList<SetDataModel> setDataModels;
     private RecyclerView recyclerView;
