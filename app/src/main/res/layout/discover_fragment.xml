@@ -28,7 +28,6 @@
             android:textSize="@dimen/font_large"
             android:background="@drawable/center_btn"
             />
-
         <Button
             android:id="@+id/btnNetwork"
             style="@style/btnRequest"
@@ -43,7 +42,7 @@
         android:id="@+id/rvHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/padding_medium">
+        >
 
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>

@@ -6,13 +6,13 @@
 
     <FrameLayout
         android:id="@+id/frame"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/ivPost"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/paris" />
 
         <RelativeLayout
@@ -46,18 +46,16 @@
 
         <Button
             android:id="@+id/btnSend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/btn_w"
+            android:layout_height="@dimen/btn_h"
             android:layout_gravity="bottom|end"
             android:layout_marginBottom="@dimen/margin_normal"
             android:layout_marginEnd="@dimen/margin_medium"
             android:layout_marginRight="@dimen/margin_normal"
-            android:background="@color/colorPrimary"
-            android:padding="@dimen/padding_normal"
+            android:background="@drawable/button"
             android:text="@string/buttonRequest"
-            android:textAllCaps="false"
             android:textColor="@color/colorText"
-            android:textSize="@dimen/font_normal" />
+            android:textSize="@dimen/font_small" />
 
         <Switch
             android:id="@+id/switchSave"
@@ -127,15 +125,15 @@
                 android:id="@+id/tvReviews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_large"
-                android:layout_marginStart="@dimen/margin_large"
                 android:drawableLeft="@drawable/reviews"
                 android:gravity="center_vertical"
                 android:paddingTop="@dimen/spacing_tiny"
                 android:text="@string/reviews"
                 android:layout_gravity="top|end"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/font_small" />
+                android:textSize="@dimen/font_small"
+                android:maxLines="1"
+                />
         </LinearLayout>
 
         <TextView
