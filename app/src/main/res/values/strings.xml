@@ -26,6 +26,10 @@ dolor sit amet, consectetur lorem ipsum.</string>
     <string name="key">AIzaSyD1RFx2HLG6jLs0tBdRWSAPc-0FzP2_duI</string>
     <string name="adddress">1097, St. Peter Street,
 CA </string>
+    <string name="posts">Posts</string>
+    <string name="Map">Map</string>
+    <string name="Network">Network</string>
+    <string name="show_on_map">Show on Map</string>
 
 
 </resources>

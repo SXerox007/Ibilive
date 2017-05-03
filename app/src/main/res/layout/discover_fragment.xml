@@ -2,14 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="@dimen/padding_normal"
+        >
+
+        <Button
+            android:id="@+id/btnPost"
+            style="@style/btnRequest"
+            android:background="@drawable/left_btn"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_large"
+            android:text="@string/posts"
+            />
+        <Button
+            android:id="@+id/btnMap"
+            style="@style/btnRequest"
+            android:text="@string/map"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_large"
+            android:background="@drawable/center_btn"
+            />
+
+        <Button
+            android:id="@+id/btnNetwork"
+            style="@style/btnRequest"
+            android:text="@string/Network"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_large"
+            android:background="@drawable/right_btn"
+            />
+    </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/padding_medium"
-        >
-    </android.support.v7.widget.RecyclerView>
+        android:padding="@dimen/padding_medium">
 
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

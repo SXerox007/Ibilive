@@ -7,6 +7,7 @@ public interface Constants {
     String MY_POSTS = "post";
     String DISCOVER = "discover";
     String MY_NETWORK = "myNetwork";
+    String REQUEST = "request";
     int CONST = 20;
     int REQUEST_CODE_PERMISSION = 2, TH_M = 3000;
     int TIME_OUT = 2000;

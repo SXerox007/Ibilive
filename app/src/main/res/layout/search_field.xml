@@ -8,7 +8,7 @@
         android:layout_weight="0.8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:padding="@dimen/padding_small"
         android:background="@drawable/edit_text_button_shape"
         android:drawableLeft="@drawable/search_icon_2"
         android:layout_marginStart="@dimen/margin_normal"

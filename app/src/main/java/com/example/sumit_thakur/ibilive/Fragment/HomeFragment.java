@@ -31,10 +31,13 @@ public class HomeFragment extends Fragment implements Constants {
 
             @Override
             public Fragment getItem(final int position) {
-                if (position == 1) {
+                if (position == 3) {
+                    Log.e("error", "sucess0");
+                    return new DiscoverFragment(REQUEST);
+                } else if (position == 1) {
                     return new MapFragment();
                 } else if (position == 4) {
-                    Log.e("hello", "sucess0");
+
                     return new DiscoverFragment(MY_NETWORK);
                 } else if (position == 2) {
                     return new DiscoverFragment(MY_POSTS);

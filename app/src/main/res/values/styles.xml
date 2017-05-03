@@ -61,4 +61,6 @@
         <item name="android:layout_height">@dimen/image_view_network</item>
     </style>
 
+    <style name="btnRequest" parent="tvToolBarBottom">
+    </style>
 </resources>

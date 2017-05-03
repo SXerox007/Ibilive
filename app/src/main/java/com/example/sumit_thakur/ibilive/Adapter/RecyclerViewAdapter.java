@@ -42,8 +42,10 @@ public class RecyclerViewAdapter extends android.support.v7.widget.RecyclerView.
     public RecyclerViewAdapter.ViewHolder onCreateViewHolder(final ViewGroup parent, final int viewType) {
         context = parent.getContext();
         View convertView;
-        if (mMode.equals(MY_NETWORK)) {
+        if (mMode.equals(REQUEST)) {
             Log.e("error", "enter this");
+            convertView = LayoutInflater.from(context).inflate(R.layout.row_layout_request, parent, false);
+        } else if (mMode.equals(MY_NETWORK)) {
             convertView = LayoutInflater.from(context).inflate(R.layout.row_layout_network, parent, false);
         } else {
             convertView = LayoutInflater.from(context).inflate(R.layout.row_layout, parent, false);
@@ -69,6 +71,11 @@ public class RecyclerViewAdapter extends android.support.v7.widget.RecyclerView.
             holder.tvReview.setText(obj.getmReviews());
             holder.tvCityName.setText(obj.getmCityName());
             holder.tvTime.setText(obj.getmTime());
+        } else if (mMode == REQUEST) {
+            Log.e("error", "final");
+            holder.tvName.setText(obj.getmName());
+            holder.tvTime.setText(obj.getmTime());
+            holder.tvInfo.setText(obj.getmInfo());
         } else {
             holder.tvInfo.setText(obj.getmInfo());
             holder.tvLocation.setText(obj.getmLocation());
@@ -108,9 +115,13 @@ public class RecyclerViewAdapter extends android.support.v7.widget.RecyclerView.
         public ViewHolder(final View itemView) {
             super(itemView);
             if (mMode.equals(MY_NETWORK)) {
-                Log.e("error", "sucess3");
                 tvName = (TextView) itemView.findViewById(R.id.tvName);
                 tvLocation = (TextView) itemView.findViewById(R.id.tvLocations);
+            } else if (mMode.equals(REQUEST)) {
+                Log.e("error", "sucess3");
+                tvName = (TextView) itemView.findViewById(R.id.tv_name);
+                tvTime = (TextView) itemView.findViewById(R.id.tvTime);
+                tvInfo = (TextView) itemView.findViewById(R.id.tvInfo);
             } else {
                 tvCityName = (TextView) itemView.findViewById(R.id.tvCityName);
                 tvLocation = (TextView) itemView.findViewById(R.id.tvLocation);
