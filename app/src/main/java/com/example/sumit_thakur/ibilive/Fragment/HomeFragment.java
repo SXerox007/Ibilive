@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.example.sumit_thakur.ibilive.Constants.Constants;
 import com.example.sumit_thakur.ibilive.R;
@@ -18,11 +20,39 @@ import com.example.sumit_thakur.ibilive.R;
  */
 public class HomeFragment extends Fragment implements Constants {
     private ViewPager viewPager;
+    private EditText etSearchBar;
+    private ImageView ivInfo;
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment, container, false);
-        viewPager = (ViewPager) view.findViewById(R.id.vpSwipe);
+        init(view);
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            @Override
+            public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(final int position) {
+                if (position == 4 || position == 3) {
+                    etSearchBar.setVisibility(View.GONE);
+                    ivInfo.setVisibility(View.GONE);
+                } else {
+                    etSearchBar.setVisibility(View.VISIBLE);
+                    ivInfo.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(final int state) {
+
+            }
+        });
+
+
         FragmentStatePagerAdapter fragmentStatePagerAdapter = new FragmentStatePagerAdapter(getChildFragmentManager()) {
             @Override
             public int getCount() {
@@ -37,7 +67,6 @@ public class HomeFragment extends Fragment implements Constants {
                 } else if (position == 1) {
                     return new MapFragment();
                 } else if (position == 4) {
-
                     return new DiscoverFragment(MY_NETWORK);
                 } else if (position == 2) {
                     return new DiscoverFragment(MY_POSTS);
@@ -48,6 +77,18 @@ public class HomeFragment extends Fragment implements Constants {
         };
         viewPager.setAdapter(fragmentStatePagerAdapter);
         return view;
+    }
+
+    /**
+     * initilization
+     *
+     * @param view view
+     */
+
+    private void init(final View view) {
+        viewPager = (ViewPager) view.findViewById(R.id.vpSwipe);
+        etSearchBar = (EditText) view.findViewById(R.id.tvInfo);
+        ivInfo = (ImageView) view.findViewById(R.id.ivInfo);
     }
 
     @Override
