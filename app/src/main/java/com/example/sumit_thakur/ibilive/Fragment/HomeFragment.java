@@ -32,9 +32,7 @@ public class HomeFragment extends Fragment implements Constants {
 
             @Override
             public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
-
             }
-
             @Override
             public void onPageSelected(final int position) {
                 if (position == 4 || position == 3) {
@@ -45,6 +43,7 @@ public class HomeFragment extends Fragment implements Constants {
                     ivInfo.setVisibility(View.VISIBLE);
                 }
             }
+
             @Override
             public void onPageScrollStateChanged(final int state) {
 
