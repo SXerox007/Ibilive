@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.sumit_thakur.ibilive.Constants.Constants;
 import com.example.sumit_thakur.ibilive.R;
@@ -22,6 +23,7 @@ public class HomeFragment extends Fragment implements Constants {
     private ViewPager viewPager;
     private EditText etSearchBar;
     private ImageView ivInfo;
+    private TextView tvDiscover;
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
@@ -33,14 +35,35 @@ public class HomeFragment extends Fragment implements Constants {
             @Override
             public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
             }
+
             @Override
             public void onPageSelected(final int position) {
-                if (position == 4 || position == 3) {
-                    etSearchBar.setVisibility(View.GONE);
-                    ivInfo.setVisibility(View.GONE);
-                } else {
-                    etSearchBar.setVisibility(View.VISIBLE);
-                    ivInfo.setVisibility(View.VISIBLE);
+                switch (position) {
+                    case 0:
+
+                        etSearchBar.setVisibility(View.VISIBLE);
+                        ivInfo.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        etSearchBar.setVisibility(View.VISIBLE);
+                        ivInfo.setVisibility(View.VISIBLE);
+                        break;
+                    case 2:
+                        etSearchBar.setVisibility(View.VISIBLE);
+                        ivInfo.setVisibility(View.VISIBLE);
+                        break;
+                    case 3:
+                        etSearchBar.setVisibility(View.GONE);
+                        ivInfo.setVisibility(View.GONE);
+                        break;
+                    case 4:
+                        etSearchBar.setVisibility(View.GONE);
+                        ivInfo.setVisibility(View.GONE);
+                        break;
+                    default:
+                        etSearchBar.setVisibility(View.VISIBLE);
+                        ivInfo.setVisibility(View.VISIBLE);
+                        break;
                 }
             }
 
@@ -87,6 +110,7 @@ public class HomeFragment extends Fragment implements Constants {
         viewPager = (ViewPager) view.findViewById(R.id.vpSwipe);
         etSearchBar = (EditText) view.findViewById(R.id.tvInfo);
         ivInfo = (ImageView) view.findViewById(R.id.ivInfo);
+        tvDiscover = (TextView) view.findViewById(R.id.tvDiscover);
     }
 
     @Override

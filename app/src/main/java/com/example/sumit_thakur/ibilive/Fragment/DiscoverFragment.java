@@ -81,7 +81,6 @@ public class DiscoverFragment extends Fragment implements Constants {
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setHasFixedSize(true);
-
     }
 
     /**
