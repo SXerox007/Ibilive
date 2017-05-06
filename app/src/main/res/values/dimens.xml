@@ -71,4 +71,5 @@
     <dimen name="btn_h">30dp</dimen>
     <dimen name="round_image">66dp</dimen>
     <dimen name="btn_side">5dp</dimen>
+    <dimen name="bottom_tool_button_height">55dp</dimen>
 </resources>

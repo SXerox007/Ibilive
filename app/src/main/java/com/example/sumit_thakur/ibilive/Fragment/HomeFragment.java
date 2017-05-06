@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.sumit_thakur.ibilive.Constants.Constants;
 import com.example.sumit_thakur.ibilive.R;
@@ -23,7 +22,6 @@ public class HomeFragment extends Fragment implements Constants {
     private ViewPager viewPager;
     private EditText etSearchBar;
     private ImageView ivInfo;
-    private TextView tvDiscover;
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
@@ -110,7 +108,6 @@ public class HomeFragment extends Fragment implements Constants {
         viewPager = (ViewPager) view.findViewById(R.id.vpSwipe);
         etSearchBar = (EditText) view.findViewById(R.id.tvInfo);
         ivInfo = (ImageView) view.findViewById(R.id.ivInfo);
-        tvDiscover = (TextView) view.findViewById(R.id.tvDiscover);
     }
 
     @Override

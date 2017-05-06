@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sumit_thakur.ibilive.BaseActivity.BaseActivity;
+import com.example.sumit_thakur.ibilive.Fragment.DiscoverFragment;
 import com.example.sumit_thakur.ibilive.Fragment.HomeFragment;
 
 /**
@@ -41,6 +42,18 @@ public class DiscoverActivity extends BaseActivity {
         fragment = new HomeFragment();
         fragmentTransaction.replace(R.id.flHomeActivity, fragment);
         fragmentTransaction.commit();
+
+        tvDiscover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                tvDiscover.setBackgroundResource(R.color.colorPrimaryDark);
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragment = new DiscoverFragment(DISCOVER);
+                fragmentTransaction.replace(R.id.flHomeActivity, fragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 
     /**
@@ -50,7 +63,11 @@ public class DiscoverActivity extends BaseActivity {
         ivSideMenu = (ImageView) findViewById(R.id.ivDrawer);
         tvTitle = (TextView) findViewById(R.id.toolbar_top_title);
         drawerLayout = (DrawerLayout) findViewById(R.id.dlUserDrawer);
-
+        tvDiscover = (TextView) findViewById(R.id.tvDiscover);
+        tvMap = (TextView) findViewById(R.id.tvMap);
+        tvPosts = (TextView) findViewById(R.id.tvMyPost);
+        tvRequests = (TextView) findViewById(R.id.tvRequest);
+        tvMyNetwork = (TextView) findViewById(R.id.tvMyNetwork);
     }
 
     /**
